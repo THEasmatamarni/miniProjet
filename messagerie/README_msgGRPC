@@ -1,0 +1,12 @@
+Assurez-vous d'avoir compilé tous les fichiers de code Java ainsi que le fichier de protocole. 
+Utilisez le compilateur protoc pour générer les classes Java à partir du fichier messaging.proto.
+protoc -I=. --java_out=. messaging.proto
+javac *.java
+
+Lancez le serveur gRPC. Assurez-vous que le serveur écoute sur le port spécifié (par exemple, 9090).
+java MessagingServer
+
+Lancez le client gRPC pour interagir avec le serveur. Le client peut envoyer des messages et récupérer les messages pour un utilisateur donné.
+java MessagingClient
+
+
