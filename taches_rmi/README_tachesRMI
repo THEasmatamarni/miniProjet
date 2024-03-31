@@ -1,0 +1,18 @@
+
+Clonez ce dépôt sur votre machine locale.
+Compilez les fichiers Java à l'aide de la commande suivante :
+    ```
+    javac *.java
+    ```
+Lancez le serveur RMI en exécutant la classe `RMIServer` :
+    ```
+    java RMIServer
+    ```
+Dans un autre terminal, lancez le client RMI en exécutant la classe `RMIClient` :
+    ```
+    java RMIClient
+    ```
+Suivez les instructions de l'application client pour ajouter, supprimer et afficher des tâches.
+
+Assurez-vous que le serveur est en cours d'exécution avant de lancer le client. 
+Vous pouvez également personnaliser le port et l'adresse du serveur RMI dans le code si nécessaire.
