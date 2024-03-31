@@ -1,0 +1,18 @@
+Déploiement :
+git clone 
+
+Compilez les fichiers Java :
+javac ChatServeur.java
+javac ChatClient.java
+
+test
+java ChatServeur
+java ChatClient
+
+Commencez à chatter :
+Une fois que le serveur et les clients sont démarrés, vous pouvez commencer à envoyer des messages. 
+Tapez un message dans n'importe quel client et appuyez sur Entrée. 
+Vous devriez voir que le message est diffusé à tous les autres clients connectés au serveur.
+
+Assurez-vous que les clients et le serveur sont tous exécutés sur la même machine locale (localhost). 
+Si vous voulez tester sur différentes machines, vous devez modifier l'adresse IP dans le code du client pour qu'elle corresponde à celle du serveur.
