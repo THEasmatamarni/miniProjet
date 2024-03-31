@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service MessagingService {
+    rpc SendMessage(Message) returns (EmptyResponse) {}
+    rpc GetMessagesForUser(User) returns (MessagesResponse) {}
+}
+
+message User {
+    string id = 1;
+}
+
+message Message {
+    string sender_id = 1;
+    string receiver_id = 2;
+    string text = 3;
+}
+
+message MessagesResponse {
+    repeated Message messages = 1;
+}
+
+message EmptyResponse {}
