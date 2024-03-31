@@ -1,5 +1,5 @@
 Déploiement :
-git clone 
+git clone https://github.com/THEasmatamarni/miniProjet.git
 
 Compilez les fichiers Java :
 javac ChatServeur.java
